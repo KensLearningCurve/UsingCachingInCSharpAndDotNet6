@@ -9,7 +9,7 @@ namespace CachingDemo.Business
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("This could be a connection string, but it isn't. This does absolutely nothing!");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CacheDemo;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -39,7 +39,7 @@ namespace CachingDemo.Business
                 {
                     Id = 4,
                     Rating = 5,
-                    ReleaseDate = new DateTime(1968, 6, 31),
+                    ReleaseDate = new DateTime(1968, 6, 30),
                     Title = "Top Gun"
                 },
                 new Movie
