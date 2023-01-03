@@ -1,10 +1,11 @@
-﻿namespace CachingDemo.ConsoleApp
+﻿using CachingDemo.Business;
+using CachingDemo.Business.Entities;
+
+MovieService movieService = new();
+
+List<Movie> allMovies = movieService.GetAll().ToList();
+
+foreach (Movie movie in allMovies)
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
+    Console.WriteLine(movie.Title);
 }
