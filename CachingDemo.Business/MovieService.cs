@@ -3,7 +3,7 @@ using CachingDemo.Business.Interfaces;
 
 namespace CachingDemo.Business
 {
-    internal class MovieService : IMovieService
+    public class MovieService : IMovieService
     {
         private readonly DataContext _dbContext;
 
