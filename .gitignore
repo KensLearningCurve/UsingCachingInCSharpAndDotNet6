@@ -6,3 +6,5 @@
 /CachingDemo.Business/obj
 /CachingDemo.ConsoleApp/.vs/CachingDemo.ConsoleApp
 /CachingDemo.ConsoleApp/obj
+/CachingDemo.Business/bin/Debug/net6.0
+/CachingDemo.ConsoleApp/bin/Debug/net6.0
