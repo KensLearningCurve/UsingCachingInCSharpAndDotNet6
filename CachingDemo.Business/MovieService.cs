@@ -1,9 +1,8 @@
 ﻿using CachingDemo.Business.Entities;
-using CachingDemo.Business.Interfaces;
 
 namespace CachingDemo.Business
 {
-    public class MovieService : IMovieService
+    public class MovieService
     {
         private readonly DataContext _dbContext;
 
