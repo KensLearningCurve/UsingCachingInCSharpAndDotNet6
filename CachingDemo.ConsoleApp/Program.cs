@@ -24,7 +24,6 @@ foreach (Movie movie in allMovies)
 Console.WriteLine();
 Console.WriteLine("Press key");
 Console.ReadLine();
-Console.WriteLine();
 
 Console.WriteLine("Second run:");
 List<Movie> sortedMovies = movieService.GetAll().OrderBy(x => x.Title).ToList();
