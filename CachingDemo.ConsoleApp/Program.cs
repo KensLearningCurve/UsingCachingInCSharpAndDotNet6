@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
 ServiceCollection services = new();
+services.AddMemoryCache();
 services.AddScoped<IMovieService, MovieService>();
 services.AddDbContext<DataContext>(x => x.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CacheDemo;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"));
 
@@ -20,6 +21,9 @@ foreach (Movie movie in allMovies)
     Console.WriteLine(movie.Title);
 }
 
+Console.WriteLine();
+Console.WriteLine("Press key");
+Console.ReadLine();
 Console.WriteLine();
 
 Console.WriteLine("Second run:");
