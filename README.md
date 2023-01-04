@@ -1,6 +1,6 @@
 # UsingCachingInCSharpAndDotNet6
 
-This repository contains code that is being used for the tutorial about basic caching in C#. You can find this tutorial at  [[https://kenslearningcurve.com/tutorials/azure-computer-vision-part-2-display-result-with-maui-blazor/](https://kenslearningcurve.com/tutorials/caching-in-c/](https://kenslearningcurve.com/tutorials/caching-in-c/).
+This repository contains code that is being used for the tutorial about basic caching in C#. You can find this tutorial at  [https://kenslearningcurve.com/tutorials/caching-in-c/](https://kenslearningcurve.com/tutorials/caching-in-c/).
 
 # How to use
 
